@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Project 심이진</string>
+    <string name="strbtnName">버튼입니다.~~~</string>
+    <string-array name="op">
+        <item> + </item>
+        <item> - </item>
+        <item> * </item>
+        <item> % </item>
+    </string-array>
+</resources>

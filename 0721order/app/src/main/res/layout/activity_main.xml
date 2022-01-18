@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="메뉴의 주문 개수를 넣어 주세요"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+        android:background="#EE9A9A">
+        <TableRow>
+            <TextView
+                android:text="피자(25000)원"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/pizza"
+                android:text="0"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="스파게티(15000)원"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/spa"
+                android:text="0"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="샐러드(10000)원"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/sal"
+                android:text="0"/>
+        </TableRow>
+        <CheckBox
+            android:id="@+id/member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_margin="10dp"
+            android:text="멤버쉽 카드 있음(20% 할인)"/>
+        <Button
+            android:text="금액 계산하기"
+            android:id="@+id/mm"/>
+        <Button
+            android:text="초기화하기"
+            android:id="@+id/reset"/>
+        <TextView
+            android:id="@+id/total"
+            android:text="주문개수 : "
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/num"
+            android:text="주문금액 : "
+            android:textSize="20dp"/>
+
+    </TableLayout>
+
+</LinearLayout>
